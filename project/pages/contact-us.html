@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anima App</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                content: [],
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            open_sans: ["Open Sans", "sans-serif"],
+                            webflow_icons: ["webflow-icons"],
+                        },
+                    },
+                },
+            };
+        </script>
+
+    </head>
+    <body
+        class="text-slate-900 text-base not-italic normal-nums font-normal accent-auto bg-white box-border block tracking-[normal] leading-6 list-outside list-disc min-h-full text-start indent-[0px] normal-case visible border-separate font-open_sans"
+    >
+        <div class="sticky box-border z-[99999] top-[0%] inset-x-[0%]">
+            <section class="relative bg-white box-border">
+                <div class="box-border px-[5%]">
+                    <div class="items-center box-border flex flex-col justify-start pt-1 pb-0 md:flex-row md:pb-1">
+                        <div class="relative items-start box-border flex basis-[0%] flex-col grow justify-between mr-4 md:items-center md:flex-row md:mr-0">
+                            <div class="relative text-black text-base font-bold items-center box-border gap-x-2 flex flex-col leading-6 text-left z-[900] mr-auto left-[0%] top-[0%] md:text-[13.6px] md:leading-[20.4px]">
+                                <div role="button" class="relative text-neutral-800 text-base box-border leading-6 text-nowrap align-top mb-2 mx-auto pl-5 pr-10 py-2 left-0 top-0 md:text-[13.6px] md:leading-[20.4px] md:mb-0">
+                                    <div
+                                        class="absolute text-base font-normal box-border h-4 leading-4 text-nowrap w-4 ml-auto mr-5 my-auto right-0 inset-y-0 font-webflow_icons md:text-[13.6px] md:h-[13.6px] md:leading-[13.6px] md:w-[13.6px] before:accent-auto before:text-neutral-800 before:text-base before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-4 before:list-outside before:list-disc before:text-left before:indent-[0px] before:normal-case before:text-nowrap before:visible before:border-separate before:font-webflow_icons before:md:text-[13.6px] before:md:leading-[13.6px]"
+                                    ></div>
+                                    <div class="text-base box-border leading-6 text-nowrap md:text-[13.6px] md:leading-[20.4px]">Language</div>
+                                </div>
+                                <nav class="absolute text-base bg-zinc-300 box-border hidden leading-6 min-w-full z-[4] left-[0%] top-[0%] md:text-[13.6px] md:leading-[20.4px]">
+                                    <div class="text-base box-border leading-6 md:text-[13.6px] md:leading-[20.4px]">
+                                        <div role="list" class="text-base box-border leading-6 overflow-hidden md:text-[13.6px] md:leading-[20.4px] md:overflow-visible">
+                                            <div role="listitem" class="text-base box-border leading-6 md:text-[13.6px] md:leading-[20.4px]">
+                                                <a href="/contact-us" class="text-sky-600 text-base box-border block leading-6 underline px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:px-4 md:py-2">English</a>
+                                            </div>
+                                            <div role="listitem" class="text-base box-border leading-6 md:text-[13.6px] md:leading-[20.4px]">
+                                                <a href="/es-us/contact-us" class="text-base box-border block leading-6 underline px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:px-4 md:py-2">Spanish (United States)</a>
+                                            </div>
+                                            <div role="listitem" class="text-base box-border leading-6 md:text-[13.6px] md:leading-[20.4px]">
+                                                <a href="/so/contact-us" class="text-base box-border block leading-6 underline px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:px-4 md:py-2">Somali</a>
+                                            </div>
+                                            <div role="listitem" class="text-base box-border leading-6 md:text-[13.6px] md:leading-[20.4px]">
+                                                <a href="/fr/contact-us" class="text-base box-border block leading-6 underline px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:px-4 md:py-2">French (Standard)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="items-center box-border gap-x-2 hidden justify-end min-h-0 min-w-0 gap-y-2 md:gap-x-0 md:flex md:min-h-[auto] md:min-w-[auto] md:gap-y-0">
+                                <div class="items-start box-border flex flex-col justify-start min-h-0 min-w-0 mb-2 md:[align-items:normal] md:block md:flex-row md:justify-normal md:min-h-[auto] md:min-w-[auto] md:mb-0">
+                                    <form class="items-center box-border flex mr-2">
+                                        <input
+                                            name="query"
+                                            placeholder="Search…"
+                                            type="search"
+                                            class="text-zinc-800 text-xs box-border block h-[38px] leading-[17.1428px] min-h-0 min-w-40 align-middle w-full border border-stone-300 px-3 py-2 border-solid md:min-h-[auto] md:min-w-[auto]"
+                                        />
+                                        <input type="submit" value="search" class="text-white text-xs bg-sky-600 box-border block leading-[18px] min-h-0 min-w-0 text-center text-nowrap px-[15px] py-[9px] md:min-h-[auto] md:min-w-[auto]" />
+                                    </form>
+                                </div>
+                                <div class="relative box-border inline-block min-h-0 min-w-0 text-left w-full z-[1] mx-auto md:block md:min-h-[auto] md:min-w-[auto] md:w-auto">
+                                    <div role="button" class="relative text-neutral-800 box-border inline-block text-nowrap align-top mx-auto"></div>
+                                </div>
+                                <div class="relative box-border inline-block min-h-0 min-w-0 text-left w-full z-[1] mx-auto md:block md:min-h-[auto] md:min-w-[auto] md:w-auto">
+                                    <div role="button" class="relative text-neutral-800 box-border inline-block text-nowrap align-top mx-auto"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-start box-border gap-x-3 grid auto-cols-max grid-flow-col grid-cols-[max-content] grid-rows-[auto] justify-items-start gap-y-0">
+                            <a href="https://www.facebook.com/partnersmn" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                <div
+                                    class="text-blue-600 text-[15px] box-border h-6 leading-[22.5px] w-6 md:text-sm md:leading-[21px] before:accent-auto before:text-blue-600 before:table before:text-[15px] before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[22.5px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans before:md:text-sm before:md:leading-[21px] after:accent-auto after:clear-both after:text-blue-600 after:table after:text-[15px] after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[22.5px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans after:md:text-sm after:md:leading-[21px]"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-3.svg" alt="Icon" class="text-[15px] box-border h-full leading-[22.5px] w-full md:text-sm md:leading-[21px]" />
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/partners_in_excellence/" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                <div
+                                    class="text-fuchsia-700 box-border h-6 w-6 before:accent-auto before:text-fuchsia-700 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-fuchsia-700 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-4.svg" alt="Icon" class="box-border h-6 w-6" />
+                                </div>
+                            </a>
+                            <a href="#" class="text-black text-sm items-center box-border hidden leading-[21px] max-w-full">
+                                <div
+                                    class="text-sky-500 box-border h-6 w-6 before:accent-auto before:text-sky-500 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-sky-500 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-5.svg" alt="Icon" class="box-border h-full w-full" />
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/partners-in-excellence/" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                <div
+                                    class="text-sky-600 box-border h-6 w-6 before:accent-auto before:text-sky-600 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-sky-600 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-6.svg" alt="Icon" class="box-border h-6 w-6" />
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/@partnersmn2539" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                <div
+                                    class="text-red-600 box-border h-6 w-6 before:accent-auto before:text-red-600 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-red-600 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-7.svg" alt="Icon" class="box-border h-full w-full" />
+                                </div>
+                            </a>
+                            <a href="https://www.tiktok.com/@partners_in_excellence" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                <div
+                                    class="text-black box-border h-6 w-6 before:accent-auto before:text-black before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-black after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-8.svg" alt="Icon" class="box-border h-full w-full" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div
+                role="banner"
+                class="sticky items-center bg-zinc-100 box-border flex min-h-16 w-full z-[80] px-[5%] md:min-h-[72px] before:accent-auto before:text-slate-900 before:table before:text-base before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-slate-900 after:table after:text-base after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-6 after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+            >
+                <div class="items-center box-border flex h-full justify-between w-full mx-auto">
+                    <a href="/" aria-label="home" class="relative text-zinc-800 box-border block float-left">
+                        <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/67925f5a43542eacb2f09ee0_Frame_9_(2).avif" alt="" class="box-border inline-block max-w-full w-[167px] py-[5%]" />
+                    </a>
+                    <nav
+                        role="navigation"
+                        class="absolute items-center bg-zinc-100 border-l-slate-900 border-r-slate-900 border-t-slate-900 box-border hidden float-none h-[1000px] min-h-0 min-w-0 overflow-auto pt-4 pb-24 px-[5%] border-b-black border-b md:static md:bg-transparent md:border-b-slate-900 md:flex md:float-right md:h-auto md:min-h-[auto] md:min-w-[auto] md:overflow-visible md:p-0 md:border-b-0"
+                    >
+                        <a
+                            href="/about"
+                            class="relative text-black text-base font-bold box-border block leading-6 min-h-0 min-w-0 text-left align-top mx-auto px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto] md:px-4 md:py-2"
+                        >
+                            About
+                        </a>
+                        <a
+                            href="/careers"
+                            class="relative text-black text-base font-bold box-border block leading-6 min-h-0 min-w-0 text-left align-top mx-auto px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto] md:px-4 md:py-2"
+                        >
+                            Careers
+                        </a>
+                        <a
+                            href="/enrollment"
+                            class="relative text-black text-base font-bold box-border block leading-6 min-h-0 min-w-0 text-left align-top mx-auto px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto] md:px-4 md:py-2"
+                        >
+                            Enrollment
+                        </a>
+                        <a
+                            href="/events"
+                            class="relative text-black text-base font-bold box-border block leading-6 min-h-0 min-w-0 text-left align-top mx-auto px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto] md:px-4 md:py-2"
+                        >
+                            Events
+                        </a>
+                        <a
+                            href="/locations"
+                            class="relative text-black text-base font-bold box-border block leading-6 min-h-0 min-w-0 text-left align-top mx-auto px-0 py-3 md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto] md:px-4 md:py-2"
+                        >
+                            Locations
+                        </a>
+                        <div class="relative text-lg box-border inline-block leading-[27px] min-h-0 min-w-0 text-left w-full z-[900] mx-auto md:text-base md:block md:leading-6 md:min-h-[auto] md:min-w-[auto] md:w-auto">
+                            <div role="button" class="relative text-black text-base font-bold items-center box-border gap-x-2 flex leading-6 text-nowrap align-top mx-auto pl-0 pr-4 py-3 md:text-[13.6px] md:leading-[20.4px] md:pl-4 md:py-2">
+                                <div class="text-base box-border leading-6 min-h-0 min-w-0 text-nowrap md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto]">Services</div>
+                                <div
+                                    class="text-base items-center box-border flex flex-col h-4 justify-center leading-6 min-h-0 min-w-0 text-nowrap w-4 right-[0%] md:text-[13.6px] md:leading-[20.4px] md:min-h-[auto] md:min-w-[auto] md:right-auto before:accent-auto before:text-black before:table before:text-base before:not-italic before:normal-nums before:font-bold before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:min-h-0 before:min-w-0 before:text-left before:indent-[0px] before:normal-case before:text-nowrap before:visible before:border-separate before:font-open_sans before:md:text-[13.6px] before:md:leading-[20.4px] before:md:min-h-[auto] before:md:min-w-[auto] after:accent-auto after:clear-both after:text-black after:table after:text-base after:not-italic after:normal-nums after:font-bold after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-6 after:list-outside after:list-disc after:min-h-0 after:min-w-0 after:text-left after:indent-[0px] after:normal-case after:text-nowrap after:visible after:border-separate after:font-open_sans after:md:text-[13.6px] after:md:leading-[20.4px] after:md:min-h-[auto] after:md:min-w-[auto]"
+                                >
+                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-9.svg" alt="Icon" class="text-base box-border h-full leading-6 text-nowrap w-full md:text-[13.6px] md:leading-[20.4px]" />
+                                </div>
+                            </div>
+                            <nav class="static text-lg bg-zinc-300 box-border hidden h-0 leading-[27px] min-w-full opacity-100 overflow-hidden md:absolute md:text-base md:h-auto md:leading-6 md:opacity-0 md:overflow-visible">
+                                <a href="/services" class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2">
+                                    All Services
+                                </a>
+                                <a href="/aba-abv" class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2">
+                                    ABA/AVB Therapy
+                                </a>
+                                <a href="/feeding-therapy" class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2">
+                                    Feeding Therapy
+                                </a>
+                                <a href="/occupational-therapy" class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2">
+                                    Occupational Therapy
+                                </a>
+                                <a
+                                    href="/speech-language-pathology"
+                                    class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2"
+                                >
+                                    Speech Therapy
+                                </a>
+                                <a href="/bridges" class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2">Bridges</a>
+                                <a href="/case-management" class="relative text-black text-base font-bold box-border block leading-6 text-nowrap align-top mx-auto pl-[2%] pr-0 py-3 md:text-[14.4px] md:leading-[21.6px] md:px-4 md:py-2">
+                                    Case Management
+                                </a>
+                            </nav>
+                        </div>
+                        <div
+                            class="items-stretch box-border gap-x-4 flex flex-col auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto_auto] min-h-0 min-w-0 gap-y-4 ml-0 mt-6 md:items-center md:flex-row md:grid-cols-[1fr_1fr] md:grid-rows-[auto] md:min-h-[auto] md:min-w-[auto] md:ml-4 md:mt-0"
+                        >
+                            <a href="#" class="text-black font-bold box-border block min-h-0 min-w-0 text-center border border-cyan-500 px-5 py-2 rounded-[10px] border-solid md:min-h-[auto] md:min-w-[auto]">952-746-5350</a>
+                            <a href="/contact-us" class="text-white font-bold bg-sky-600 box-border block min-h-0 min-w-0 text-center border border-cyan-500 px-5 py-2 rounded-[10px] border-solid md:min-h-[auto] md:min-w-[auto]">
+                                Contact Us
+                            </a>
+                        </div>
+                    </nav>
+                    <div aria-label="menu" role="button" class="relative text-2xl box-border block float-right leading-9 min-h-[auto] min-w-[auto] md:hidden md:min-h-0 md:min-w-0">
+                        <div class="items-center box-border flex flex-col h-12 justify-center w-12 -mr-2 md:[align-items:normal] md:block md:flex-row md:h-auto md:justify-normal md:w-auto md:mr-0">
+                            <div class="bg-black box-border h-0.5 min-h-[auto] min-w-[auto] w-6 md:bg-transparent md:h-auto md:min-h-0 md:min-w-0 md:w-auto"></div>
+                            <div
+                                class="items-center bg-black box-border flex h-0.5 justify-center min-h-[auto] min-w-[auto] w-6 my-1.5 md:[align-items:normal] md:bg-transparent md:block md:h-auto md:justify-normal md:min-h-0 md:min-w-0 md:w-auto md:my-0"
+                            >
+                                <div class="box-border h-0 min-h-[auto] min-w-[auto] w-1 md:h-auto md:min-h-0 md:min-w-0 md:w-auto"></div>
+                            </div>
+                            <div class="bg-black box-border h-0.5 min-h-[auto] min-w-[auto] w-6 md:bg-transparent md:h-auto md:min-h-0 md:min-w-0 md:w-auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute box-border hidden w-full overflow-hidden top-full inset-x-0"></div>
+            </div>
+        </div>
+        <div class="box-border">
+            <main class="box-border">
+                <section class="text-white bg-cyan-500 box-border">
+                    <div class="box-border px-[5%]">
+                        <div class="box-border max-w-screen-md w-full mx-auto">
+                            <div class="text-black box-border py-16 md:py-28">
+                                <div class="box-border mb-8">
+                                    <div class="box-border text-center">
+                                        <div class="box-border max-w-screen-md w-full mx-auto">
+                                            <div class="relative box-border z-[2] mb-5 md:mb-8"><h2 class="text-white text-4xl font-bold box-border leading-[43.2px] md:text-5xl md:leading-[57.6px]">Contact Us</h2></div>
+                                            <p class="text-white text-base box-border leading-6 md:text-lg md:leading-[27px]">Have a question or need assistance? We&#39;re here to help.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-border max-w-[560px] w-full mx-auto">
+                                    <div class="box-border">
+                                        <div
+                                            class="box-border before:accent-auto before:text-black before:table before:text-base before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-black after:table after:text-base after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-6 after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                        >
+                                            <div class="box-border w-full rounded-[3px] md:w-auto">
+                                                <div class="box-border w-full rounded-[3px]">
+                                                    <iframe src="https://api.leadconnectorhq.com/widget/form/hiFKE5iTIL9WeAqiQuu9" title="B2C Contact Form" class="box-border h-[1280px] w-full rounded-[3px] md:h-[1115px]"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-zinc-100 box-border">
+                    <div class="box-border px-[5%]">
+                        <div class="box-border max-w-screen-md w-full mx-auto">
+                            <div class="text-black box-border py-16 md:py-28">
+                                <div class="items-start box-border gap-x-8 grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] justify-items-start gap-y-12 md:gap-x-12 md:grid-cols-[1fr_1fr_1fr] md:gap-y-16">
+                                    <div class="items-center bg-sky-600 box-border flex-col h-full w-full p-8 rounded-[10px]">
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8">
+                                            <div class="box-border">
+                                                <div
+                                                    class="text-white items-center box-border flex flex-col h-12 justify-center text-center w-12 mx-auto before:accent-auto before:text-white before:table before:text-base before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-white after:table after:text-base after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-6 after:list-outside after:list-disc after:text-center after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                                >
+                                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-10.svg" alt="Icon" class="box-border h-full w-full" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-border mb-3 md:mb-8"><h3 class="text-white text-2xl font-bold box-border leading-[33.6px] text-center md:text-[32px] md:leading-[41.6px]">Email</h3></div>
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8"><p class="text-white box-border text-center">Please fill out the form above to contact our intake team.</p></div>
+                                    </div>
+                                    <div class="text-white items-center bg-red-600 box-border flex-col h-full w-full p-8 rounded-[10px]">
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8">
+                                            <div class="box-border">
+                                                <div
+                                                    class="items-center box-border flex flex-col h-12 justify-center w-12 mx-auto before:accent-auto before:text-white before:table before:text-base before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-white after:table after:text-base after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-6 after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                                >
+                                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-11.svg" alt="Icon" class="box-border h-full w-full" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-border mb-3 md:mb-8"><h3 class="text-2xl font-bold box-border leading-[33.6px] text-center md:text-[32px] md:leading-[41.6px]">Phone</h3></div>
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8"><p class="box-border text-center">We typically respond within 24 hours.</p></div>
+                                        <div class="text-sm box-border leading-[21px] text-center">
+                                            <a href="tel://+19527465350" class="text-black box-border underline">952-746-5350<br class="box-border" /> </a>
+                                        </div>
+                                    </div>
+                                    <div class="items-center bg-lime-400 box-border flex-col h-full w-full p-8 rounded-[10px]">
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8">
+                                            <div class="box-border">
+                                                <div
+                                                    class="text-white items-center box-border flex flex-col h-12 justify-center text-center w-12 mx-auto before:accent-auto before:text-white before:table before:text-base before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-6 before:list-outside before:list-disc before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-white after:table after:text-base after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-6 after:list-outside after:list-disc after:text-center after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                                >
+                                                    <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-12.svg" alt="Icon" class="box-border h-full w-full" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-border mb-3 md:mb-8"><h3 class="text-white text-2xl font-bold box-border leading-[33.6px] text-center md:text-[32px] md:leading-[41.6px]">Locations</h3></div>
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8"><p class="text-white box-border text-center">View all location information.</p></div>
+                                        <div class="text-white text-sm box-border leading-[21px] text-center"><a href="/locations" class="text-black box-border underline">View our Locations</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <section class="relative text-white box-border mx-[5%] my-[3%]">
+            <div class="box-border px-[5%]">
+                <div class="box-border max-w-screen-xl w-full mx-auto">
+                    <div class="text-black box-border py-16 md:py-28">
+                        <div class="relative box-border z-[1]">
+                            <div class="box-border text-center">
+                                <div class="box-border max-w-screen-md w-full mx-auto">
+                                    <div class="relative box-border z-[2] mb-5 md:mb-8">
+                                        <h2 class="text-white text-4xl font-bold box-border leading-[43.2px] md:text-5xl md:leading-[57.6px]">Join a Team That Cares as Much as You Do</h2>
+                                    </div>
+                                    <p class="text-white text-base box-border leading-6 md:text-lg md:leading-[27px]">Help kids reach their potential while building a career you’re proud of.</p>
+                                    <div class="box-border mt-6 md:mt-8">
+                                        <div class="items-center box-border gap-x-4 flex flex-wrap justify-center gap-y-4">
+                                            <a href="/careers" class="text-white font-bold bg-red-600 box-border block border border-cyan-500 px-6 py-3 rounded-[10px] border-solid">Apply Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))] box-border z-0 rounded-[25px] inset-[0%]">
+                <div class="absolute bg-transparent bg-[linear-gradient(140deg,rgba(11,113,195,0.51),rgba(16,178,215,0.9))] box-border z-[1] rounded-[25px] inset-[0%]"></div>
+                <img
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    alt=""
+                    src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/676ecaf344056695bda41634_all_services_page.webp"
+                    class="absolute box-border h-full max-w-full object-cover w-full rounded-[25px] inset-[0%]"
+                />
+            </div>
+        </section>
+        <footer class="text-white bg-slate-900 box-border">
+            <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/676da72d848816903d6d76cc_divider.svg" alt="" class="relative box-border inline-block max-w-full align-top w-full" />
+            <div class="box-border px-[5%]">
+                <div class="box-border max-w-screen-xl w-full mx-auto">
+                    <div class="box-border pt-32 pb-8">
+                        <div class="box-border pb-12 md:pb-20">
+                            <div class="items-start box-border gap-x-8 grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-10 md:grid-cols-[1.25fr_1fr_1fr_1fr_1fr] md:gap-y-4">
+                                <a
+                                    href="#"
+                                    class="relative text-zinc-800 box-border block float-left col-end-[span_1] col-start-[span_1] row-end-[span_1] row-start-[span_1] md:col-end-auto md:col-start-auto md:row-end-auto md:row-start-auto"
+                                >
+                                    <img alt="" src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/676d9bbbdaeb0f77dbb33b4f_logo-light.svg" class="box-border inline-block h-full max-w-full min-w-[50%] w-full pt-[10%]" />
+                                </a>
+                                <div class="box-border">
+                                    <div class="box-border mb-3 md:mb-8"><div class="text-cyan-500 font-semibold box-border">Hours</div></div>
+                                    <div class="items-start box-border flex flex-col auto-cols-[100%] grid-cols-[100%] grid-rows-[auto] justify-items-start">
+                                        <div class="relative box-border z-[2] mb-5 md:mb-8">
+                                            <p class="text-[14.4px] font-light box-border leading-[21.6px] text-left">
+                                                <strong class="font-bold box-border">Open: <br class="box-border" /> </strong> Mon. - Fri. <br class="box-border" />
+                                                8 AM - 5 PM
+                                            </p>
+                                        </div>
+                                        <div class="box-border">
+                                            <p class="text-[14.4px] font-light box-border leading-[21.6px] text-left"><strong class="font-bold box-border">Closed the Following: </strong> ‍</p>
+                                            <p class="box-border pt-4">
+                                                September 1 2025<br class="box-border" />
+                                                November 27 2025<br class="box-border" />
+                                                November 28 2025<br class="box-border" />
+                                                December 24 2025<br class="box-border" />
+                                                December 25 2025<br class="box-border" />
+                                                December 26 2025<br class="box-border" />
+                                                January 2 2026<br class="box-border" />
+                                                July 3 2026
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-border">
+                                    <div class="box-border">
+                                        <div class="box-border mb-3 md:mb-8"><div class="text-green-700 font-semibold box-border">More</div></div>
+                                        <div class="items-start box-border flex flex-col auto-cols-[100%] grid-cols-[100%] grid-rows-[auto] justify-items-start">
+                                            <a href="/about" class="text-sm box-border block leading-[21px] py-2">About Us</a>
+                                            <a href="/careers" class="text-sm box-border block leading-[21px] py-2">Careers</a>
+                                            <a href="/enrollment" class="text-sm box-border block leading-[21px] py-2">Enrollment</a>
+                                            <a href="/events" class="text-sm box-border block leading-[21px] py-2">Events</a>
+                                            <a href="/frequently-asked-questions" class="text-sm box-border block leading-[21px] py-2">FAQs</a>
+                                            <a href="/parent-resources" class="text-sm box-border block leading-[21px] py-2">Resources</a>
+                                            <a href="https://pie.promotionalresourcesinc.net/" class="text-sm box-border block leading-[21px] py-2">Store</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-border">
+                                    <div class="box-border mb-3 md:mb-8"><div class="text-lime-400 font-semibold box-border">Services</div></div>
+                                    <div class="items-start box-border flex flex-col auto-cols-[100%] grid-cols-[100%] grid-rows-[auto] justify-items-start">
+                                        <a href="/aba-abv" class="text-sm box-border block leading-[21px] py-2">ABA/AVB</a>
+                                        <a href="/bridges" class="text-sm box-border block leading-[21px] py-2">Bridges</a>
+                                        <a href="/feeding-therapy" class="text-sm box-border block leading-[21px] py-2">Feeding Therapy</a>
+                                        <a href="/speech-language-pathology" class="text-sm box-border block leading-[21px] py-2">Speech &amp; Language Pathology</a>
+                                        <a href="/occupational-therapy" class="text-sm box-border block leading-[21px] py-2">Occupational Therapy</a>
+                                        <a href="/case-management" class="text-sm box-border block leading-[21px] py-2">Case Management</a>
+                                    </div>
+                                </div>
+                                <div class="box-border">
+                                    <div class="box-border mb-3 md:mb-8"><div class="text-red-600 font-semibold box-border">Locations</div></div>
+                                    <div class="items-start box-border flex flex-col auto-cols-[100%] grid-cols-[100%] grid-rows-[auto] justify-items-start">
+                                        <a href="/locations" class="text-sm box-border block leading-[21px] py-2">Arden Hills</a>
+                                        <a href="/locations" class="text-sm box-border block leading-[21px] py-2">Burnsville</a>
+                                        <a href="/locations" class="text-sm box-border block leading-[21px] py-2">Minnetonka</a>
+                                        <a href="/locations" class="text-sm box-border block leading-[21px] py-2">LaCrosse</a>
+                                        <a href="/locations" class="text-sm box-border block leading-[21px] py-2">Winona</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-yellow-400 box-border h-px w-full"></div>
+                        <div class="box-border pt-6 md:pt-8">
+                            <div class="items-start box-border flex flex-col-reverse justify-start pb-4 md:items-center md:flex-row md:justify-between md:pb-0">
+                                <div class="box-border gap-x-0 flex flex-col auto-cols-max grid-flow-row grid-cols-[max-content] grid-rows-[auto] justify-center gap-y-4 md:gap-x-6 md:flex-row md:grid-flow-col md:gap-y-0">
+                                    <div class="text-sm box-border col-end-2 col-start-1 row-end-5 row-start-4 leading-[21px] order-1 mt-4 md:col-end-auto md:col-start-auto md:row-end-auto md:row-start-auto md:order-none md:mt-0">
+                                        © 2025 Partners. All rights reserved.
+                                    </div>
+                                    <a href="https://feedbackwrench.com/" class="text-sm font-light box-border block leading-[21px]">Website by Feedbackwrench</a>
+                                    <a href="/privacypolicy" class="text-sm font-light box-border block leading-[21px]">Privacy Policy</a>
+                                    <a href="/terms-of-use" class="text-sm font-light box-border block leading-[21px]">Terms of Use</a>
+                                </div>
+                                <div class="items-start box-border gap-x-3 flex auto-cols-max grid-flow-col grid-cols-[max-content] grid-rows-[auto] justify-items-start gap-y-0 mb-8 md:mb-0">
+                                    <div class="items-start box-border gap-x-3 grid auto-cols-max grid-flow-col grid-cols-[max-content] grid-rows-[auto] justify-items-start gap-y-0">
+                                        <a href="https://www.facebook.com/partnersmn" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                            <div
+                                                class="text-blue-600 text-[15px] box-border h-6 leading-[22.5px] w-6 md:text-sm md:leading-[21px] before:accent-auto before:text-blue-600 before:table before:text-[15px] before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[22.5px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans before:md:text-sm before:md:leading-[21px] after:accent-auto after:clear-both after:text-blue-600 after:table after:text-[15px] after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[22.5px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans after:md:text-sm after:md:leading-[21px]"
+                                            >
+                                                <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-3.svg" alt="Icon" class="text-[15px] box-border h-full leading-[22.5px] w-full md:text-sm md:leading-[21px]" />
+                                            </div>
+                                        </a>
+                                        <a href="https://www.instagram.com/partners_in_excellence/" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                            <div
+                                                class="text-fuchsia-700 box-border h-6 w-6 before:accent-auto before:text-fuchsia-700 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-fuchsia-700 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                            >
+                                                <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-4.svg" alt="Icon" class="box-border h-6 w-6" />
+                                            </div>
+                                        </a>
+                                        <a href="#" class="text-black text-sm items-center box-border hidden leading-[21px] max-w-full">
+                                            <div
+                                                class="text-sky-500 box-border h-6 w-6 before:accent-auto before:text-sky-500 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-sky-500 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                            >
+                                                <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-5.svg" alt="Icon" class="box-border h-full w-full" />
+                                            </div>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/partners-in-excellence/" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                            <div
+                                                class="text-sky-600 box-border h-6 w-6 before:accent-auto before:text-sky-600 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-sky-600 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                            >
+                                                <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-6.svg" alt="Icon" class="box-border h-6 w-6" />
+                                            </div>
+                                        </a>
+                                        <a href="https://www.youtube.com/@partnersmn2539" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                            <div
+                                                class="text-red-600 box-border h-6 w-6 before:accent-auto before:text-red-600 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-red-600 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                            >
+                                                <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-7.svg" alt="Icon" class="box-border h-full w-full" />
+                                            </div>
+                                        </a>
+                                        <a href="https://www.tiktok.com/@partners_in_excellence" class="text-black text-sm items-center box-border flex leading-[21px] max-w-full">
+                                            <div
+                                                class="text-white box-border h-6 w-6 before:accent-auto before:text-white before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[21px] before:list-outside before:list-disc before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-open_sans after:accent-auto after:clear-both after:text-white after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-open_sans"
+                                            >
+                                                <img src="https://c.animaapp.com/mdprfw8vD0PqB1/assets/icon-13.svg" alt="Icon" class="box-border h-full w-full" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
